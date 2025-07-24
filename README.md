@@ -1,5 +1,5 @@
 # Description
-The route guide server and client demonstrate how to use grpc go libraries to
+This route guide server and client demonstrate how to use grpc go libraries to
 perform unary, client streaming, server streaming and full duplex RPCs.
 
 Please refer to [gRPC Basics: Go](https://grpc.io/docs/tutorials/basic/go.html) for more information.
