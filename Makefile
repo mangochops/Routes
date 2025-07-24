@@ -1,14 +1,7 @@
-PROTOC        = protoc
-PROTO_FILE    = routeguide/route_guide.proto
-PROTO_PATH    = .
-GO_OUT        = .
-GO_OPTIONS    = paths=source_relative
-
 gen:
-	@$(PROTOC) \
-		--proto_path=$(PROTO_PATH) $(PROTO_FILE) \
-		--go_out=$(GO_OUT) --go_opt=$(GO_OPTIONS) \
-		--go-grpc_out=$(GO_OUT) --go-grpc_opt=$(GO_OPTIONS)
+	@protoc \
+		--proto_path= . routeguide/route_guide.proto \
+		--go_out= . --go_opt= paths=source_relative \
+		--go-grpc_out= . --go-grpc_opt= paths=source_relative
 
-clean:
-	@rm -f routeguide/*.pb.go
+
