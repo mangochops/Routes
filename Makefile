@@ -1,3 +1,4 @@
+\\makefile
 gen:
 	@protoc \
 		--proto_path= . routeguide/route_guide.proto \
